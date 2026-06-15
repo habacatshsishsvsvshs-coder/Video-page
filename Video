@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Video</title>
+    <style>
+        /* Mengatur dasar halaman dengan latar belakang hitam */
+        body {
+            background-color: #111111;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Styling untuk Judul Utama */
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Container untuk membungkus tombol agar rapi */
+        .button-container {
+            width: 100%;
+            max-width: 400px; /* Batas maksimal lebar tombol di layar besar */
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Jarak antar tombol */
+        }
+
+        /* Styling Tombol Berwarna Merah */
+        .btn-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff0000; /* Warna merah terang */
+            color: #ffffff;
+            text-decoration: none; /* Menghilangkan garis bawah link */
+            font-weight: bold;
+            font-size: 18px;
+            padding: 18px;
+            border-radius: 12px; /* Membuat sudut tombol melengkung */
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-sizing: border-box;
+        }
+
+        /* Efek saat tombol ditekan atau dilewati mouse (hover) */
+        .btn-video:hover {
+            background-color: #cc0000; /* Merah sedikit lebih gelap */
+        }
+        
+        .btn-video:active {
+            transform: scale(0.98); /* Efek mengecil sedikit saat diklik */
+        }
+
+        /* Styling ikon segitiga play (►) */
+        .play-icon {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Halaman Video</h1>
+
+    <div class="button-container">
+        
+        <a href="LINK_VIDEO_1_DISINI" class="btn-video" target="_blank">
+            <span class="play-icon">►</span> Play Video 1
+        </a>
+
+        <a href="LINK_VIDEO_2_DISINI" class="btn-video" target="_blank">
+            <span class="play-icon">►</span> Play Video 2
+        </a>
+
+        <a href="LINK_VIDEO_3_DISINI" class="btn-video" target="_blank">
+            <span class="play-icon">►</span> Play Video 3
+        </a>
+
+    </div>
+
+</body>
+</html>
+
